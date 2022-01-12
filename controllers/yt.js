@@ -87,10 +87,7 @@ async function otakudesu(req, res) {
         message: `apikey ${apikey} not found, please register first!`
     });
     otakudesu(judul).then(result => {
-        res.status(200).send({
-            status: 200, 
-            result: result
-        });
+                res.status(200).send({status: 200, result: result});
     }).catch(error => {
         console.log(error);
         res.status(500).send({
