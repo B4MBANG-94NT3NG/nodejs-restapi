@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { cekKey } = require('../database/db'); 
-const { youtubePlay, youtubeMp4, youtubeMp3, pinterest, otakudesu } = require('../controllers/yt');
+const { youtubePlay, youtubeMp4, youtubeMp3, pinterest, otakudesu, igstalk, igstory, igdownloader, twitterdownloader } = require('../controllers/yt');
 const { cakLontong, bijak, quotes, fakta, ptl, motivasi, indonesia, malaysia, thailand, vietnam, korea, japan, naruto, china, tiktok, asupan, geayubi, ukhty, rikagusriani, anony, hijaber, joker, harley, cecan, santuy, bocil } = require('../controllers/randomtext');
 
 router.get('/checkkey', async (req, res) => {
@@ -77,5 +77,13 @@ router.get('/asupan/joker', joker);
 router.get('/otakudesu', otakudesu);
 
 router.get('/pinterest', pinterest);
+
+router.get('/igstory', igstory);
+
+router.get('/igstalk', igstalk);
+
+router.get('/igdl', igdownloader);
+
+router.get('/twitter', twitterdownloader);
 
 module.exports = router;
