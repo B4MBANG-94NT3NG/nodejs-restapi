@@ -73,7 +73,7 @@ async function youtubeMp4(req, res) {
         })
     });
 }
-/*
+
 async function otakudesu(req, res) {
     const judul = req.query.judul;
     const apikey = req.query.apikey;
@@ -228,6 +228,6 @@ async function twitterdownloader(req, res) {
             message: 'Internal Server Error'
         })
     });
-}*/
+}
 
 module.exports = { youtubePlay, youtubeMp3, youtubeMp4 };
