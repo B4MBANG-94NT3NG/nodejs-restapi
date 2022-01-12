@@ -52,4 +52,6 @@ router.get('/asupan/tiktok', tiktok);
 
 router.get('/cecan/china', china);
 
+router.get('/naruto', naruto);
+
 module.exports = router;
