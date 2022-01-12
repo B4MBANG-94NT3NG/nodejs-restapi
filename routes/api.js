@@ -74,7 +74,7 @@ router.get('/asupan/anony', anony);
 
 router.get('/asupan/joker', joker);
 
-router.get('/otakudesu', otakudesu);
+/*router.get('/otakudesu', otakudesu);
 
 router.get('/pinterest', pinterest);
 
@@ -84,6 +84,6 @@ router.get('/igstalk', igstalk);
 
 router.get('/igdl', igdownloader);
 
-router.get('/twitter', twitterdownloader);
+router.get('/twitter', twitterdownloader);*/
 
 module.exports = router;
