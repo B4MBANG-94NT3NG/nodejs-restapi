@@ -126,4 +126,4 @@ async function pinterest(req, res) {
     });
 }
 
-module.exports = { youtubePlay, youtubeMp3, youtubeMp4 };
+module.exports = { youtubePlay, youtubeMp3, youtubeMp4, otakudesu, pinterest };
