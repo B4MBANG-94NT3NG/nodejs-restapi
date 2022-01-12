@@ -1,5 +1,5 @@
 const { ytPlay, ytMp3, ytMp4 } = require("../lib/youtube");
-/*const { otakudesu, pinterest, igdl, igstory, igstalk, twitter } = require("../lib/scrapt");*/
+const { otakudesu, pinterest, igdl, igstory, igstalk, twitter } = require("../lib/scrapt");
 const { cekKey } = require('../database/db');
 
 async function youtubePlay(req, res) {
