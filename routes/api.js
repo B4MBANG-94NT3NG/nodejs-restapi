@@ -1,11 +1,6 @@
-__path = process.cwd()
 const express = require('express');
 const router = express.Router();
 const { cekKey } = require('../database/db'); 
-var { fetchJson } = require(__path + '/lib/fetcher.js')
-var { getBuffer } = require(__path + '/lib/functions.js');
-const fs = require('fs');
-const fetch = require('node-fetch');
 const { youtubePlay, youtubeMp4, youtubeMp3, igdownloader, twitterdownloader } = require('../controllers/yt');
 const { cakLontong, bijak, quotes, fakta, ptl, motivasi, indonesia, malaysia, thailand, vietnam, korea, japan, naruto, china, tiktok, asupan, geayubi, ukhty, rikagusriani, anony, hijaber, joker, harley, cecan, santuy, bocil } = require('../controllers/randomtext');
 
@@ -23,30 +18,6 @@ router.get('/checkkey', async (req, res) => {
     res.send({status: 200, apikey: apikey, response: 'Active'});
 });
 
-router.get('/textprome/matrix', async(req, res ) => {
-   const apikey = req.query.apikey;
-   const text = req.query.text;
-    if (text ==== undefined || apikey === undefined) return res.status(404).send({
-        status: 404,
-        message: `Input Parameter apikey`
-    });
-    const check = await cekKey(apikey);
-    if (!check) return res.status(403).send({
-        status: 403,
-        message: `apikey ${apikey} not found, please register first!`
-    });
-   const hasil = await getBuffer(`https://api.zeks.me/api/matrix?apikey=alpin1234567&text=${text}`)
-       await fs.writeFileSync(__path + '/tmp/matrix.png', hasil)
-         res.sendFile(__path + '/tmp/matrix.png')
-       .catch(error => {
-        console.log(error);
-        res.status(500).send({
-            status: 500,
-            message: 'Internal Server Error'
-        })
-    });
-})
-    
 router.get('/ytplay', youtubePlay);
 
 router.get('/ytmp4', youtubeMp4);
