@@ -124,4 +124,175 @@ async function motivasi(req, res) {
     });
 }
 
+async function tiktok(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/tiktok.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
+async function china(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/china.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
+async function naruto(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/naruto.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
+async function indonesia(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/indonesia.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
+async function malaysia(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/malaysia.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
+async function korea(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/korea.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
+async function japan(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/japan.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
+async function thailand(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/thailand.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
+async function vietnam(req, res) {
+    const apikey = req.query.apikey;
+    if (apikey === undefined) return res.status(404).send({
+        status: 404,
+        message: `Input Parameter apikey`
+    });
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first!`
+    });
+    readFileTxt('./lib/data/vietnam.txt').then(result => {
+        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    }).catch(error => {
+        console.log(error);
+        res.status(500).send({status: 500, message: 'Internal Server Error'});
+    });
+}
+
 module.exports = {cakLontong, quotes, bijak, fakta, ptl, motivasi };
