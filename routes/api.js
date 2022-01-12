@@ -80,10 +80,10 @@ router.get('/pinterest', pinterest);
 
 router.get('/igstory', igstory);
 
-router.get('/igstalk', igstalk);*/
+router.get('/igstalk', igstalk);
 
 router.get('/igdl', igdownloader);
 
-router.get('/twitter', twitterdownloader);
+router.get('/twitter', twitterdownloader);*/
 
 module.exports = router;
