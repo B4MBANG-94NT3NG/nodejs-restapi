@@ -294,5 +294,4 @@ async function vietnam(req, res) {
         res.status(500).send({status: 500, message: 'Internal Server Error'});
     });
 }
-
-module.exports = {cakLontong, quotes, bijak, fakta, ptl, motivasi };
+module.exports = {cakLontong, quotes, bijak, fakta, ptl, motivasi, naruto, indonesia, vietnam, thailand, malaysia, korea, japan, china, tiktok };
