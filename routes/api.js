@@ -74,6 +74,9 @@ router.get('/asupan/anony', anony);
 
 router.get('/asupan/joker', joker);
 
+router.get('/igdl', igdownloader);
+
+router.get('/twitter', twitterdownloader);
 /*router.get('/otakudesu', otakudesu);
 
 router.get('/pinterest', pinterest);
