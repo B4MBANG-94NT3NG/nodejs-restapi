@@ -306,7 +306,7 @@ async function asupan(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/asupan.json).then(result => {
+    readFileJson('./lib/data/asupan.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -328,7 +328,7 @@ async function geayubi(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/geayubi.json).then(result => {
+    readFileJson('./lib/data/geayubi.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -350,7 +350,7 @@ async function ukhty(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/ukhty.json).then(result => {
+    readFileJson('./lib/data/ukhty.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -372,7 +372,7 @@ async function anony(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/anony.json).then(result => {
+    readFileJson('./lib/data/anony.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -394,7 +394,7 @@ async function hijaber(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/hijaber.json).then(result => {
+    readFileJson('./lib/data/hijaber.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -416,7 +416,7 @@ async function santuy(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/santuy.json).then(result => {
+    readFileJson('./lib/data/santuy.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -438,7 +438,7 @@ async function harley(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/harley.json).then(result => {
+    readFileJson('./lib/data/harley.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -460,7 +460,7 @@ async function rikagusriani(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/rikagusriani.json).then(result => {
+    readFileJson('./lib/data/rikagusriani.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -482,7 +482,7 @@ async function bocil(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/bocil.json).then(result => {
+    readFileJson('./lib/data/bocil.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -504,7 +504,7 @@ async function joker(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/joker.json).then(result => {
+    readFileJson('./lib/data/joker.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
@@ -526,7 +526,7 @@ async function cecan(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/cecan.json).then(result => {
+    readFileJson('./lib/data/cecan.json').then(result => {
         res.status(200).send({
             status: 200, 
             result : result.result
