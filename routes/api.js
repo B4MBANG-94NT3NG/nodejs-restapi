@@ -38,13 +38,14 @@ router.get('/textprome/matrix', async(req, res ) => {
    const hasil = await getBuffer(`https://api.zeks.me/api/matrix?apikey=alpin1234567&text=${text}`)
        await fs.writeFileSync(__path + '/tmp/matrix.png', hasil)
          res.sendFile(__path + '/tmp/matrix.png')
-    }).catch(error => {
+       .catch(error => {
         console.log(error);
         res.status(500).send({
             status: 500,
             message: 'Internal Server Error'
         })
     });
+})
     
 router.get('/ytplay', youtubePlay);
 
