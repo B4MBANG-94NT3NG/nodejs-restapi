@@ -73,7 +73,7 @@ async function youtubeMp4(req, res) {
         })
     });
 }
-
+/*
 async function otakudesu(req, res) {
     const judul = req.query.judul;
     const apikey = req.query.apikey;
@@ -96,7 +96,7 @@ async function otakudesu(req, res) {
         })
     });
 }
-/*
+
 async function pinterest(req, res) {
     const querry = req.query.querry;
     const apikey = req.query.apikey;
@@ -227,4 +227,4 @@ async function twitterdownloader(req, res) {
     });
 }
 */
-module.exports = { youtubePlay, youtubeMp3, youtubeMp4 };
+module.exports = { youtubePlay, youtubeMp3, youtubeMp4, otakudesu, pinterest, igdl, igstory, igstalk, twitter };
