@@ -99,7 +99,7 @@ async function otakudesu(req, res) {
         })
     });
 }
-
+/*
 async function pinterest(req, res) {
     const querry = req.query.querry;
     const apikey = req.query.apikey;
@@ -229,5 +229,5 @@ async function twitterdownloader(req, res) {
         })
     });
 }
-
+*/
 module.exports = { youtubePlay, youtubeMp3, youtubeMp4 };
