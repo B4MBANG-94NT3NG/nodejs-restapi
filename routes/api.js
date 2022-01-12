@@ -36,4 +36,18 @@ router.get('/ptl', ptl);
 
 router.get('/motivasi', motivasi);
 
+router.get('/cecan/indonesia', indonesia);
+
+router.get('/cecan/malaysia', malaysia);
+
+router.get('/cecan/korea', korea);
+
+router.get('/cecan/thailand', thailand);
+
+router.get('/cecan/jepang', japan);
+
+router.get('/cecan/vietnam', vietnam);
+
+router.get('/asupan/tiktok', tiktok);
+
 module.exports = router;
