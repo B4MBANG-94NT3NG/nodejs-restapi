@@ -77,7 +77,7 @@ async function youtubeMp4(req, res) {
 async function otakudesu(req, res) {
     const judul = req.query.judul;
     const apikey = req.query.apikey;
-    if (url === undefined || apikey === undefined) return res.status(404).send({
+    if (judul === undefined || apikey === undefined) return res.status(404).send({
         status: 404,
         message: `Input Parameter url & apikey`
     });
@@ -103,7 +103,7 @@ async function otakudesu(req, res) {
 async function pinterest(req, res) {
     const querry = req.query.querry;
     const apikey = req.query.apikey;
-    if (url === undefined || apikey === undefined) return res.status(404).send({
+    if (query === undefined || apikey === undefined) return res.status(404).send({
         status: 404,
         message: `Input Parameter url & apikey`
     });
