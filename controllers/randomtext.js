@@ -307,7 +307,10 @@ async function asupan(req, res) {
         message: `apikey ${apikey} not found, please register first!`
     });
     readFileJson('./lib/data/asupan.json').then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+        res.status(200).send({
+            status: 200, 
+            result : result.result
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -326,7 +329,10 @@ async function geayubi(req, res) {
         message: `apikey ${apikey} not found, please register first!`
     });
     readFileJson('./lib/data/geayubi.json').then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -344,8 +350,11 @@ async function ukhty(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/ukhty.json).then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    readFileJson('./lib/data/ukhty.json').then(result => {
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -363,8 +372,11 @@ async function anony(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/anony.json).then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    readFileJson('./lib/data/anony.json').then(result => {
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -382,8 +394,11 @@ async function hijaber(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/hijaber.json).then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    readFileJson('./lib/data/hijaber.json').then(result => {
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -401,8 +416,11 @@ async function santuy(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/santuy.json).then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    readFileJson('./lib/data/santuy.json').then(result => {
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -420,8 +438,11 @@ async function harley(req, res) {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    readFileJson('./lib/data/harley.json).then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+    readFileJson('./lib/data/harley.json').then(result => {
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -440,7 +461,10 @@ async function rikagusriani(req, res) {
         message: `apikey ${apikey} not found, please register first!`
     });
     readFileJson('./lib/data/rikagusriani.json').then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -459,7 +483,10 @@ async function bocil(req, res) {
         message: `apikey ${apikey} not found, please register first!`
     });
     readFileJson('./lib/data/bocil.json').then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -478,7 +505,10 @@ async function joker(req, res) {
         message: `apikey ${apikey} not found, please register first!`
     });
     readFileJson('./lib/data/joker.json').then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
@@ -497,7 +527,10 @@ async function cecan(req, res) {
         message: `apikey ${apikey} not found, please register first!`
     });
     readFileJson('./lib/data/cecan.json').then(result => {
-        res.status(200).send({status: 200, result: result.replace(/"/g, '')});
+        res.status(200).send({
+            status: 200, 
+            result : result.url
+        });
     }).catch(error => {
         console.log(error);
         res.status(500).send({status: 500, message: 'Internal Server Error'});
