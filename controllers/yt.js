@@ -95,7 +95,7 @@ async function otakudesu(req, res) {
             message: 'Internal Server Error'
         })
     });
-}*/
+}
 
 async function pinterest(req, res) {
     const querry = req.query.querry;
@@ -122,7 +122,7 @@ async function pinterest(req, res) {
         })
     });
 }
-/*
+
 async function igstalk(req, res) {
     const username = req.query.username;
     const apikey = req.query.apikey;
@@ -147,8 +147,8 @@ async function igstalk(req, res) {
             message: 'Internal Server Error'
         })
     });
-}
-/*
+}*/
+
 async function igstory(req, res) {
     const username = req.query.username;
     const apikey = req.query.apikey;
@@ -173,7 +173,7 @@ async function igstory(req, res) {
             message: 'Internal Server Error'
         })
     });
-}*/
+}
 
 async function igdownloader(req, res) {
     const url = req.query.url;
@@ -227,4 +227,4 @@ async function twitterdownloader(req, res) {
     });
 }
 
-module.exports = { youtubePlay, youtubeMp3, youtubeMp4, otakudesu, pinterest, igdl, igstory, igstalk, twitter };
+module.exports = { youtubePlay, youtubeMp3, youtubeMp4, otakudesu, pinterest, igdl, igstory, igstory, twitter };
