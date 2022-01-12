@@ -147,7 +147,7 @@ async function igstalk(req, res) {
             message: 'Internal Server Error'
         })
     });
-}
+}*/
 
 async function igstory(req, res) {
     const username = req.query.username;
@@ -199,7 +199,7 @@ async function igdownloader(req, res) {
             message: 'Internal Server Error'
         })
     });
-}*/
+}
 
 async function twitterdownloader(req, res) {
     const link = req.query.link;
