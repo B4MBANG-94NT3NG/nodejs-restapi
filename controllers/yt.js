@@ -199,7 +199,7 @@ async function igdownloader(req, res) {
             message: 'Internal Server Error'
         })
     });
-}
+}*/
 
 async function twitterdownloader(req, res) {
     const link = req.query.link;
@@ -226,5 +226,5 @@ async function twitterdownloader(req, res) {
         })
     });
 }
-*/
+
 module.exports = { youtubePlay, youtubeMp3, youtubeMp4, otakudesu, pinterest, igdl, igstory, igstalk, twitter };
