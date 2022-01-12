@@ -54,26 +54,4 @@ router.get('/cecan/china', china);
 
 router.get('/naruto', naruto);
 
-router.get('/asupan/gheayubi', geayubi);
-
-router.get('/asupan/santuy', santuy);
-
-router.get('/asupan/bocil', bocil);
-
-router.get('/asupan/rikagusriani', rikagusriani);
-
-router.get('/asupan/ukhty', ukhty);
-
-router.get('/asupan/cecan', cecan);
-
-router.get('/asupan/harley', harley);
-
-router.get('/asupan/hijaber', hijaber);
-
-router.get('/asupan/anony', anony);
-
-router.get('/asupan/joker', joker);
-
-router.get('/asupan/asupan', asupan);
-
 module.exports = router;
