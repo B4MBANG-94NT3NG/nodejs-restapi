@@ -50,4 +50,6 @@ router.get('/cecan/vietnam', vietnam);
 
 router.get('/asupan/tiktok', tiktok);
 
+router.get('/cecan/china', china);
+
 module.exports = router;
