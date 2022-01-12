@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const { cekKey } = require('../database/db'); 
+var fs = require('fs');
+var fetch = require('node-fetch');
 const { youtubePlay, youtubeMp4, youtubeMp3, igdownloader, twitterdownloader } = require('../controllers/yt');
 const { cakLontong, bijak, quotes, fakta, ptl, motivasi, indonesia, malaysia, thailand, vietnam, korea, japan, naruto, china, tiktok, asupan, geayubi, ukhty, rikagusriani, anony, hijaber, joker, harley, cecan, santuy, bocil } = require('../controllers/randomtext');
 
