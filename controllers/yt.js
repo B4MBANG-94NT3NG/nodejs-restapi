@@ -79,7 +79,7 @@ async function otakudesu(req, res) {
     const apikey = req.query.apikey;
     if (judul === undefined || apikey === undefined) return res.status(404).send({
         status: 404,
-        message: `Input Parameter url & apikey`
+        message: `Input Parameter judul & apikey`
     });
     const check = await cekKey(apikey);
     if (!check) return res.status(403).send({
@@ -105,7 +105,7 @@ async function pinterest(req, res) {
     const apikey = req.query.apikey;
     if (query === undefined || apikey === undefined) return res.status(404).send({
         status: 404,
-        message: `Input Parameter url & apikey`
+        message: `Input Parameter query & apikey`
     });
     const check = await cekKey(apikey);
     if (!check) return res.status(403).send({
