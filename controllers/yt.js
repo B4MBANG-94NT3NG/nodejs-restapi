@@ -227,4 +227,4 @@ async function twitterdownloader(req, res) {
     });
 }
 
-module.exports = { youtubePlay, youtubeMp3, youtubeMp4, otakudesu, pinterest, igdl, twitter };
+module.exports = { youtubePlay, youtubeMp3, youtubeMp4, otakudesu, pinterest, igdownloader, twitterdownloader };
